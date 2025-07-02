@@ -1,4 +1,3 @@
-````markdown
 # 🧠 ML Project – AI-Powered Web App
 
 **ML Project** is a full-stack Laravel + Python web application that combines multiple AI capabilities in one interface. Users can:
@@ -47,7 +46,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/ml-project.git
+git clone https://github.com/reemSameh21/ml-project.git
 cd ml-project
 ```
 
