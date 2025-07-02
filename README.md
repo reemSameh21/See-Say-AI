@@ -63,7 +63,7 @@ php artisan key:generate
 ```bash
 python3 -m venv imagegen-env
 source imagegen-env/bin/activate
-pip install -r requirements.txt
+pip install youtube-transcript-api transformers torch sentencepiece diffusers accelerate
 ```
 
 ### 4. Set your Hugging Face token
