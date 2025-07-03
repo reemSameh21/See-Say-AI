@@ -46,7 +46,7 @@
     </style>
 </head>
 <body>
-    <h1>🎨 AI Image Generation</h1>
+    <h1>AI Image Generation 🎨</h1>
 
     <form method="POST" action="{{ route('generate-image') }}">
         @csrf

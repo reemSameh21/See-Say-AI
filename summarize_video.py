@@ -15,7 +15,6 @@ def get_video_id(url):
         return parse_qs(query.query).get('v', [None])[0]
     return None
 
-# تحميل الترانسكريبشن
 def get_transcript(video_id):
     try:
         transcript = YouTubeTranscriptApi.get_transcript(video_id)
@@ -23,7 +22,6 @@ def get_transcript(video_id):
     except Exception as e:
         return None
 
-# تلخيص النص باستخدام Hugging Face
 def summarize_text(text, token):
     headers = {
         "Authorization": f"Bearer {token}",
@@ -45,14 +43,13 @@ def summarize_text(text, token):
     else:
         return f"Error: {response.status_code} - {response.text}"
 
-# نقطة التشغيل
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Error: Please provide a YouTube URL.")
         sys.exit(1)
 
     youtube_url = sys.argv[1]
-    hf_token = os.getenv("HF_TOKEN")  # تأكدي إنه متسجل في البيئة
+    hf_token = os.getenv("HF_TOKEN")
 
     if not hf_token:
         print("Error: Hugging Face token not set in environment variable HF_TOKEN.")

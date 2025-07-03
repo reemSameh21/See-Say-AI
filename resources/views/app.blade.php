@@ -61,7 +61,7 @@
 </head>
 <body>
 
-    <h1>🧠 AI ML Project</h1>
+    <h1>ML Project 🧠</h1>
 
     <div class="tabs">
         <div class="tab {{ (isset($active_tab) && $active_tab === 'image') || !isset($active_tab) ? 'active' : '' }}" onclick="showTab('image')">Generate Image</div>
